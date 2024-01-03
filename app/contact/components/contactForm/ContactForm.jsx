@@ -22,7 +22,7 @@ function Form() {
       await fetch("https://sendmail-api-docs.vercel.app/api/send", {
         method: "POST",
         body: JSON.stringify({
-          to: "rahmaaesmail26@gmail.com",
+          to: "elshetydev99@gmail.com",
           subject: "Message From Contact Form",
           message: `
             name:${formData.name} ,
@@ -65,7 +65,7 @@ function Form() {
         <textarea
           placeholder="Your Message"
           value={formData.message}
-          onChange={(e) => handleChange(2)}
+          onChange={(e) => handleChange(e)}
           name="message"
           required
         ></textarea>
